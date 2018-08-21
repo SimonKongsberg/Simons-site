@@ -11,7 +11,7 @@ class header extends Component {
         <HashRouter>
           <div className="nav">
                 <ul className="header">
-                    <h1 className="header--title">Hello world</h1>
+                    <h1 className="header--title">Simons site</h1>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/stuff">Stuff</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
