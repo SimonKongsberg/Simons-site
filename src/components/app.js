@@ -1,21 +1,24 @@
 import React, {Component} from 'react';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import home from "./home";
+import stuff from "./stuff";
+import contact from "./contact";
 import logo from '../assets/images/logo.svg';
-import '../styles/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello world</h1>
-        <ul className="header">
-          <li><a href="/">Home</a></li>
-          <li><a herf="/stuff">Stuff</a></li>
-          <li><a herf="/contact">Contact</a></li>
-        </ul>
-        <div className="content">
-
-        </div>
-      </div>
+      <HashRouter>
+          <div className="content">
+            <Route exact path="/" component={home}/>
+            <Route path="/stuff" component={stuff}/>
+            <Route path="/contact" component={contact}/>
+          </div>
+      </HashRouter>
   );
   }
 }
