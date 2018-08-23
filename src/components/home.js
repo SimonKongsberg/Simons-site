@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import logo from '../assets/images/logo.svg';
 import Slider from "react-slick";
 
+var divStyle = {
+  backgroundColor: 'lightblue',
+  color: 'white',
+  backgroundImage: 'url:../assets/images/map-2.png'
+};
+
 class home extends Component {
     render() {
       var settings = {
@@ -13,26 +19,28 @@ class home extends Component {
       };
       return (
         <div>
-          <Slider {...settings}>
+          <div style={divStyle}>
+            <Slider {...settings}>
+                <div>
+                    <h3  >1</h3>
+                </div>
               <div>
-                <h3>1</h3>
+                <h3>2</h3>
               </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
+              <div>
+                <h3>3</h3>
+              </div>
+              <div>
+                <h3>4</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+            </Slider>
+          </div>
           <h2>HELLO</h2>
           <p>Cras facilisis urna ornare ex volutpat, et
           convallis erat elementum. Ut aliquam, ipsum vitae

@@ -2,7 +2,6 @@
 @import url(~slick-carousel/slick/slick-theme.css);
 body {
   background-color: #FFCC00;
-  padding: 30px;
   margin: 0; }
 
 h1, h2, p, ul, li {
@@ -38,3 +37,6 @@ ul.header li a {
   font-weight: bold;
   text-decoration: none;
   display: inline-block; }
+
+.navBar {
+  background-color: #111; }
